@@ -296,6 +296,8 @@ npm install --global http-server
 npx http-server
 ```
 
+The `index.html` file is given at `frontend/` directory
+
 ## TODO
 - [x] Minting
     - [x] Mint ERC1155 NFT tokens with following format JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size 100MB
