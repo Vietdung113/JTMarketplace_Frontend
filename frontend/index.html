@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Marketplace</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <button id="btn-login-metamask" onClick="connectToMetamask()">
+        Connect Metamask
+      </button>
+      <h3 id="metamask-board" style="color:red;">Metamask board</h4>
+      <h4 id="metamask-status" >Metamask status: Disconnected</h4>
+      <h4 id="metamask-account">Metamask account: </h4>
+      <h4 id="wei-balance">Wei balance: </h4>
+      <h4 id="weth-balance">WETH balance: </h4>
+    </div>
+    <div>
+        <h3 id="contract-board" style="color:red;">Contract board</h3>
+        <h4 id="marketplace-address">Marketplace address: </h4>
+        <h4 id="arttoken-address">NFT contract address: </h4>
+        <h4 id="weth10-address">WETH address: </h4>
+    </div>
+    <div>
+      <h4 style="color:red;">Account board</h4>
+      <div id="account-board"> </div>
+    </div>
+    <div>
+      <h4 style="color:red;">NFT board</h4>
+      <div id="nft-board"> </div>
+    </div>
+    <div>
+      <h4 style="color:red;">WETH board</h4>
+      <div id="weth-board"> </div>
+    </div>
+    <div>
+      <h4 style="color:red;">Marketplace board</h4>
+      <div id="marketplace-board"> </div>
+    </div>
+    <div>
+      <h4 style="color:red;">Event logs</h4>
+      <div id="event-board"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./marketplace.js"></script>
+</html>
